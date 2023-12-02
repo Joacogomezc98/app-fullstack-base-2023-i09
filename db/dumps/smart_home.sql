@@ -53,18 +53,10 @@ INSERT INTO `Devices` (`id`, `name`, `description`, `state`, `type`) VALUES
 (6, 'Persiana 3', 'Persiana balcon', 0, 1);
 
 --
--- Indexes for dumped tables
---
-
---
 -- Indexes for table `Devices`
 --
 ALTER TABLE `Devices`
   ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
 
 --
 -- AUTO_INCREMENT for table `Devices`
