@@ -21,7 +21,6 @@ app.use(express.static('/home/node/app/static/'));
 //Validate device fields
 const validateDeviceFields = (req, res, next) => {
     const device = req.body;
-    console.log(device)
     if (
         !device ||
         !device.name ||
