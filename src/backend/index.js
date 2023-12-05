@@ -21,8 +21,14 @@ app.use(express.static('/home/node/app/static/'));
 //Validate device fields
 const validateDeviceFields = (req, res, next) => {
     const device = req.body;
-
-    if (!device || !device.name || !device.description || !device.state || !device.type) {
+    console.log(device)
+    if (
+        !device ||
+        !device.name ||
+        !device.description ||
+        device.state === undefined ||
+        device.type === undefined
+    ) {
         res.status(400).send("Incomplete device information. All fields are required.");
     } else {
         next(); // Continue to the next middleware or route handler
