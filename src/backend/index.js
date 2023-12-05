@@ -2,8 +2,6 @@
 const express = require('express');
 const cors = require("cors");
 const db = require('./mysql-connector')
-const config = require("./config.js");
-
 
 // VARIABLES
 const app = express();
@@ -123,6 +121,6 @@ app.delete("/device/:id", (req, res) => {
     });
 });
 
-app.listen(config.BACKEND_PORT, () => {
-    console.log(`NodeJS API running correctly on port: ${config.BACKEND_PORT}`);
+app.listen(3000, () => {
+    console.log(`NodeJS API running correctly on port 3000`);
 });

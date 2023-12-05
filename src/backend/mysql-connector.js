@@ -1,14 +1,13 @@
 //===============================IMPORTS==================================================
 const mysql = require('mysql');
-const config = require("./config.js");
 
 //===============================DB CONNECTION============================================
 const connection = mysql.createConnection({
-    host: config.DB_HOST,
-    port: config.DB_PORT,
-    user: config.DB_USER,
-    password: config.DB_PASSWORD,
-    database: config.DB_NAME
+    host: 'mysql-server',
+    port: 3306,
+    user: 'root',
+    password: 'userpass',
+    database: 'smart_home'
 });
 
 //=======[ Main module code ]==================================================

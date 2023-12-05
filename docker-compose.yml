@@ -44,13 +44,6 @@ services:
       - mysql-server
     ports:
       - "8000:3000"
-    environment:
-      BACKEND_PORT: 3000
-      DB_HOST: mysql-server
-      DB_PORT: 3306
-      DB_USER: root
-      DB_PASSWORD: userpass
-      DB_NAME: smart_home
     command: nodemon /home/node/app/src/index.js
 
 networks:
